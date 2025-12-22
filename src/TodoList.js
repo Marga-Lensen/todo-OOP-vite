@@ -29,7 +29,8 @@ export class TodoList {
       li.addEventListener("click", () => {
         item.toggle();               // Zustand im Objekt ändern
 
-        li.classList.add("done")  // formattierung mit schalten
+        li.classList.add("done")  // formattierung mit schalten; funktioniert schon
+        // li.classList.toggle("done"); ausprobieren....
 
         this.render(container);      // Liste neu zeichnen
       });
